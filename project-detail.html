@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEase — Manoj Dhiman</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+
+<nav class="navbar">
+  <a class="nav-logo" href="index.html">MD<span>.</span></a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html" class="nav-cta">Hire Me</a>
+  </div>
+  <div class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="skills.html">Skills</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html" class="nav-cta">Hire Me</a>
+</div>
+
+<!-- PROJECT DETAIL HERO -->
+<div class="container project-detail-hero">
+  <a href="projects.html" class="back-link" data-reveal>← Back to Projects</a>
+
+  <div class="project-tags" style="margin-bottom: 1rem;" data-reveal data-reveal-delay="1">
+    <span class="project-tag">React</span>
+    <span class="project-tag">Node.js</span>
+    <span class="project-tag">MongoDB</span>
+    <span class="project-tag">Stripe</span>
+    <span class="project-tag">Full Stack</span>
+  </div>
+
+  <h1 class="project-detail-title" data-reveal data-reveal-delay="2">
+    ShopEase — E-Commerce<br>Platform
+  </h1>
+
+  <div class="project-detail-meta" data-reveal data-reveal-delay="3">
+    <div class="meta-item">
+      <span class="meta-label">Year</span>
+      <span class="meta-val">2024</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">Role</span>
+      <span class="meta-val">Full-Stack Developer</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">Duration</span>
+      <span class="meta-val">6 Weeks</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">Type</span>
+      <span class="meta-val">Personal Project</span>
+    </div>
+  </div>
+
+  <div class="hero-actions" style="margin-bottom: 2rem;" data-reveal data-reveal-delay="4">
+    <a href="#" class="btn-primary">Live Demo ↗</a>
+    <a href="#" class="btn-secondary">GitHub Repo ⚙</a>
+  </div>
+</div>
+
+<!-- HERO IMAGE -->
+<div class="container" data-reveal>
+  <div class="project-hero-img">
+    🛒
+    <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(79,142,247,0.15), rgba(124,58,237,0.15));"></div>
+    <div style="position: absolute; bottom: 2rem; left: 2rem; right: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+      <div style="background: rgba(10,15,30,0.8); backdrop-filter: blur(10px); border: 1px solid var(--border); border-radius: var(--radius); padding: 0.8rem 1.2rem;">
+        <div style="font-size: 0.72rem; color: var(--text-muted); margin-bottom: 0.2rem;">Revenue</div>
+        <div style="font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; color: #4ade80;">₹4.2L+</div>
+      </div>
+      <div style="background: rgba(10,15,30,0.8); backdrop-filter: blur(10px); border: 1px solid var(--border); border-radius: var(--radius); padding: 0.8rem 1.2rem;">
+        <div style="font-size: 0.72rem; color: var(--text-muted); margin-bottom: 0.2rem;">Users</div>
+        <div style="font-family: var(--font-display); font-size: 1.2rem; font-weight: 700;">1,200+</div>
+      </div>
+      <div style="background: rgba(10,15,30,0.8); backdrop-filter: blur(10px); border: 1px solid var(--border); border-radius: var(--radius); padding: 0.8rem 1.2rem;">
+        <div style="font-size: 0.72rem; color: var(--text-muted); margin-bottom: 0.2rem;">Performance</div>
+        <div style="font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; color: var(--accent);">98/100</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PROJECT CONTENT -->
+<section>
+  <div class="container">
+    <div class="project-content-grid">
+      <!-- MAIN BODY -->
+      <div class="project-body-text">
+        <h2 data-reveal>Overview</h2>
+        <p data-reveal data-reveal-delay="1">
+          ShopEase is a full-featured e-commerce platform I built from scratch to showcase my full-stack development skills. It handles everything from product browsing to checkout, with a complete admin panel for managing inventory and orders.
+        </p>
+        <p data-reveal data-reveal-delay="2">
+          The project was born out of a desire to understand the entire lifecycle of an e-commerce application — not just the shiny frontend, but the complex backend logic for inventory management, payment processing, and order fulfillment.
+        </p>
+
+        <h2 data-reveal>The Challenge</h2>
+        <p data-reveal data-reveal-delay="1">
+          Building an e-commerce app sounds straightforward until you dive in. The real challenges were:
+        </p>
+        <ul data-reveal data-reveal-delay="2">
+          <li>Designing a cart that persists across sessions and handles concurrent users</li>
+          <li>Implementing Stripe webhooks for reliable payment confirmation</li>
+          <li>Building a real-time inventory system that prevents overselling</li>
+          <li>Creating an admin dashboard that's powerful yet intuitive</li>
+          <li>Optimizing product image loading for a fast, snappy experience</li>
+        </ul>
+
+        <h2 data-reveal>Solution & Approach</h2>
+        <p data-reveal data-reveal-delay="1">
+          I chose the MERN stack for its flexibility and JavaScript consistency across the full stack. For state management, I used Redux Toolkit to handle the complex cart and user authentication flows.
+        </p>
+        <p data-reveal data-reveal-delay="2">
+          Payments are handled via Stripe with full webhook integration, ensuring orders are only confirmed when payment succeeds — even in edge cases like network failures. The admin dashboard uses Chart.js for real-time sales analytics.
+        </p>
+
+        <!-- MOCKUP SCREENS -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 2rem 0;" data-reveal>
+          <div style="aspect-ratio: 4/3; background: linear-gradient(135deg, #1a2340, #111827); border-radius: var(--radius); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 2.5rem;">🏪</div>
+          <div style="aspect-ratio: 4/3; background: linear-gradient(135deg, #1a1035, #111827); border-radius: var(--radius); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 2.5rem;">📊</div>
+          <div style="aspect-ratio: 4/3; background: linear-gradient(135deg, #0f2027, #111827); border-radius: var(--radius); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 2.5rem;">🛒</div>
+          <div style="aspect-ratio: 4/3; background: linear-gradient(135deg, #0a2a1a, #111827); border-radius: var(--radius); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 2.5rem;">💳</div>
+        </div>
+
+        <h2 data-reveal>Key Features</h2>
+        <ul data-reveal data-reveal-delay="1">
+          <li>Product catalog with search, filters, categories, and pagination</li>
+          <li>User authentication with JWT (register, login, Google OAuth)</li>
+          <li>Shopping cart with persistent state (localStorage + DB sync)</li>
+          <li>Stripe payment integration with webhook confirmation</li>
+          <li>Order history, tracking, and email notifications</li>
+          <li>Admin dashboard: product CRUD, order management, analytics</li>
+          <li>Image upload with Cloudinary integration</li>
+          <li>Responsive design — fully mobile-optimized</li>
+        </ul>
+
+        <h2 data-reveal>Results & Learnings</h2>
+        <p data-reveal data-reveal-delay="1">
+          This project taught me an enormous amount about building production-grade applications. I learned how to structure a large codebase, handle asynchronous operations gracefully, and think deeply about user experience at every touchpoint.
+        </p>
+        <p data-reveal data-reveal-delay="2">
+          The Lighthouse score consistently hits 95+ for performance. Page load time is under 1.2 seconds on a 4G connection — achieved through code splitting, lazy loading, and image optimization via Cloudinary's CDN.
+        </p>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="project-sidebar" data-reveal data-reveal-delay="2">
+        <div class="sidebar-card">
+          <div class="sidebar-card-title">Tech Stack</div>
+          <div class="tech-stack-list">
+            <span class="tech-badge">React.js</span>
+            <span class="tech-badge">Redux</span>
+            <span class="tech-badge">Node.js</span>
+            <span class="tech-badge">Express</span>
+            <span class="tech-badge">MongoDB</span>
+            <span class="tech-badge">Mongoose</span>
+            <span class="tech-badge">Stripe API</span>
+            <span class="tech-badge">JWT Auth</span>
+            <span class="tech-badge">Cloudinary</span>
+            <span class="tech-badge">Tailwind CSS</span>
+            <span class="tech-badge">Chart.js</span>
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <div class="sidebar-card-title">Project Links</div>
+          <div class="project-nav-links">
+            <a href="#" class="project-nav-link">↗ Live Demo</a>
+            <a href="#" class="project-nav-link">⚙ GitHub Repo</a>
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <div class="sidebar-card-title">Project Stats</div>
+          <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.8rem; border-bottom: 1px solid var(--border);">
+              <span style="font-size: 0.85rem; color: var(--text-muted);">Lighthouse Score</span>
+              <span style="font-weight: 700; color: #4ade80;">98/100</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.8rem; border-bottom: 1px solid var(--border);">
+              <span style="font-size: 0.85rem; color: var(--text-muted);">Load Time</span>
+              <span style="font-weight: 700; color: var(--accent);">1.2s</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.8rem; border-bottom: 1px solid var(--border);">
+              <span style="font-size: 0.85rem; color: var(--text-muted);">Lines of Code</span>
+              <span style="font-weight: 700;">~8,400</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 0.85rem; color: var(--text-muted);">Duration</span>
+              <span style="font-weight: 700;">6 weeks</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTACT CTA IN SIDEBAR -->
+        <div style="background: linear-gradient(135deg, rgba(79,142,247,0.15), rgba(124,58,237,0.15)); border: 1px solid rgba(79,142,247,0.25); border-radius: var(--radius); padding: 1.5rem; text-align: center;">
+          <div style="font-size: 1.5rem; margin-bottom: 0.7rem;">💬</div>
+          <div style="font-family: var(--font-display); font-weight: 700; margin-bottom: 0.5rem;">Like what you see?</div>
+          <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1rem;">Let's work on something similar for you.</p>
+          <a href="contact.html" class="btn-primary" style="width: 100%; justify-content: center; font-size: 0.88rem; padding: 0.7rem 1rem;">Hire Me →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEXT PROJECT -->
+<section class="next-project-section">
+  <div class="container">
+    <div style="font-size: 0.78rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.5rem;" data-reveal>Up Next</div>
+    <a href="project-detail.html" class="next-project-card" data-reveal data-reveal-delay="1">
+      <div>
+        <div class="next-label">Next Project</div>
+        <div class="next-title">TaskFlow — Project Manager</div>
+      </div>
+      <div class="next-arrow">→</div>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-logo">MD<span>.</span></div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p class="footer-copy">© 2025 Manoj Dhiman. Made with <span>♥</span> in Shimla</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
