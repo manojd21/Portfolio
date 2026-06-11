@@ -3,32 +3,7 @@
    ============================================ */
 
 // ---- CUSTOM CURSOR ----
-const cursor = document.querySelector('.cursor');
-const follower = document.querySelector('.cursor-follower');
 
-if (cursor && follower) {
-  let mouseX = 0, mouseY = 0;
-  let followerX = 0, followerY = 0;
-
-  document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-    cursor.style.transform = `translate(${mouseX - 6}px, ${mouseY - 6}px)`;
-  });
-
-  function animateFollower() {
-    followerX += (mouseX - followerX - 18) * 0.12;
-    followerY += (mouseY - followerY - 18) * 0.12;
-    follower.style.transform = `translate(${followerX}px, ${followerY}px)`;
-    requestAnimationFrame(animateFollower);
-  }
-  animateFollower();
-
-  document.querySelectorAll('a, button, .skill-card, .project-card, .highlight-card').forEach(el => {
-    el.addEventListener('mouseenter', () => follower.classList.add('hovered'));
-    el.addEventListener('mouseleave', () => follower.classList.remove('hovered'));
-  });
-}
 
 // ---- NAVBAR SCROLL ----
 const navbar = document.querySelector('.navbar');
