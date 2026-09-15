@@ -44,7 +44,6 @@
   <div class="container">
     <div class="hero-grid">
       <div class="hero-content">
-        <div class="hero-btn">
         <div class="availability" data-reveal>
           <span class="availability-dot"></span>
           Available for freelance work
@@ -52,14 +51,13 @@
         <div class="section-eyebrow hero-eyebrow" data-reveal data-reveal-delay="1">
           👋 Hello, I'm
         </div>
-        </div>
         <h1 class="hero-title" data-reveal data-reveal-delay="2">
           <span class="line">Manoj</span>
           <span class="line accent-word">Dhiman</span>
           <span class="line">Web <span class="underline-word">Wizard</span></span>
         </h1>
         <p class="hero-desc" data-reveal data-reveal-delay="3">
-          I craft clean, performant, and visually compelling web experiences. From pixel-perfect UI to rock-solid backends — I build things that work beautifully.
+        I craft clean, performant, and visually compelling web experiences. From pixel-perfect UI to rock-solid backends — I build things that work beautifully.
         </p>
         <div class="hero-actions" data-reveal data-reveal-delay="4">
           <a href="projects.html" class="btn-primary">View My Work <span>→</span></a>
@@ -81,16 +79,10 @@
         </div>
       </div>
 
-      <div class="hero-visual" data-reveal data-reveal-delay="3">
+      <div class="hero-visual" data-reveal="right" data-reveal-delay="3">
         <div class="hero-card gradient-border">
           <div class="hero-avatar-wrap">
-            <div class="hero-avatar-placeholder"><img src="White Logo.png" alt=""></div>
-          </div>
-        </div>
-        <div class="hero-floating-badge badge-1">
-          <div class="badge-icon">⚡</div>
-          <div class="badge-text">
-            <strong>Wordpress</strong>
+            <img src="Avatar.png" alt="">
           </div>
         </div>
         <div class="hero-floating-badge badge-2">
@@ -103,14 +95,17 @@
       </div>
     </div>
   </div>
-
+  <div class="hero-scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
 </section>
 
 <!-- MARQUEE -->
 <div class="marquee-section">
   <div class="marquee-inner">
     <div class="marquee-track" aria-hidden>
-      <span class="marquee-item"><span class="marquee-dot"></span>HTML & CSS</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>HTML &amp; CSS</span>
       <span class="marquee-item"><span class="marquee-dot"></span>JavaScript</span>
       <span class="marquee-item"><span class="marquee-dot"></span>Wordpress</span>
       <span class="marquee-item"><span class="marquee-dot"></span>Shopify</span>
@@ -120,7 +115,7 @@
       <span class="marquee-item"><span class="marquee-dot"></span>Figma</span>
     </div>
     <div class="marquee-track" aria-hidden>
-      <span class="marquee-item"><span class="marquee-dot"></span>HTML & CSS</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>HTML &amp; CSS</span>
       <span class="marquee-item"><span class="marquee-dot"></span>JavaScript</span>
       <span class="marquee-item"><span class="marquee-dot"></span>Wordpress</span>
       <span class="marquee-item"><span class="marquee-dot"></span>Shopify</span>
@@ -188,15 +183,19 @@
       </div>
       <div class="tech-pills-row">
         <div class="tech-pill">
+          <span class="tech-pill-icon">🎨</span>
           <span class="tech-pill-name">Photoshop</span>
         </div>
         <div class="tech-pill">
+          <span class="tech-pill-icon">✏️</span>
           <span class="tech-pill-name">Figma</span>
         </div>
         <div class="tech-pill">
+          <span class="tech-pill-icon">֎</span>
           <span class="tech-pill-name">AI Tools</span>
         </div>
         <div class="tech-pill">
+          <span class="tech-pill-icon">🌐</span>
           <span class="tech-pill-name">Google Business Suit</span>
         </div>
       </div>
@@ -221,76 +220,71 @@
     </div>
 
     <div class="projects-grid">
-      <a href="project-detail.html" class="project-card featured" data-reveal>
+
+      <div class="project-card" data-reveal data-reveal-delay="1">
         <div class="project-img">
-          <div class="project-img-emoji">🛒</div>
-          <div class="project-img-overlay"></div>
-        </div>
-        <div class="project-body">
-          <div>
-            <div class="project-tags">
-              <span class="project-tag">React</span>
-              <span class="project-tag">Node.js</span>
-              <span class="project-tag">MongoDB</span>
-            </div>
-            <div class="project-title">ShopEase — E-Commerce Platform</div>
-          </div>
-          <div>
-            <p class="project-desc">A full-stack e-commerce app with cart, auth, payments and admin dashboard. Built for performance and scale.</p>
-            <div class="project-footer">
-              <div class="project-links">
-                <span class="project-link">⚙</span>
-                <span class="project-link">↗</span>
-              </div>
-              <div class="project-arrow">View Project →</div>
-            </div>
-          </div>
-        </div>
-      </a>
-
-      <a href="project-detail.html" class="project-card" data-reveal data-reveal-delay="1">
-        <div class="project-img" style="background: linear-gradient(145deg,#E0F2FE,#BAE6FD);">
-          <div class="project-img-emoji">📝</div>
-          <div class="project-img-overlay"></div>
+          <img src="Project Images/EchoWings Media.jpg" alt="">
         </div>
         <div class="project-body">
           <div class="project-tags">
-            <span class="project-tag">React</span>
-            <span class="project-tag">Firebase</span>
+            <span class="project-tag">Wordpress</span>
+            <span class="project-tag">Elementor</span>
+            <span class="project-tag">Responsive Design</span>
           </div>
-          <div class="project-title">TaskFlow — Project Management App</div>
-          <p class="project-desc">Kanban-style task manager with real-time collaboration, drag-and-drop, and team workspaces.</p>
+          <div class="project-title">EchoWings Media — Digital Marketing Agency</div>
+          <p class="project-desc">A responsive agency website showcasing digital marketing and web-design services with clear content and strong calls to action.</p>
           <div class="project-footer">
             <div class="project-links">
-              <span class="project-link">⚙</span>
-              <span class="project-link">↗</span>
-            </div>
-            <div class="project-arrow">View →</div>
+              <a href="https://echowingsmedia.com/" target="_blank" class="project-arrow">View Website →</a>
+              <a href="contact.html" class="project-arrow">Hire Me</a>
+          </div>
           </div>
         </div>
-      </a>
+      </div>
 
-      <a href="project-detail.html" class="project-card" data-reveal data-reveal-delay="2">
-        <div class="project-img" style="background: linear-gradient(145deg,#EDE9FE,#DDD6FE);">
-          <div class="project-img-emoji">💼</div>
-          <div class="project-img-overlay"></div>
+      <div class="project-card" data-reveal data-reveal-delay="1">
+        <div class="project-img">
+          <img src="Project Images/Cliffton Valley.jpg" alt="">
         </div>
         <div class="project-body">
           <div class="project-tags">
-            <span class="project-tag">Next.js</span>
-            <span class="project-tag">Tailwind</span>
+            <span class="project-tag">Wordpress</span>
+            <span class="project-tag">Elementor</span>
+            <span class="project-tag">Custom Css</span>
           </div>
-          <div class="project-title">FreelanceHub — Job Platform</div>
-          <p class="project-desc">Connecting freelancers with clients. Features profiles, bidding, escrow payments and reviews.</p>
+          <div class="project-title">Cliffton Valley — Real Estate Website</div>
+          <p class="project-desc">A premium real-estate website showcasing luxury Shimla residences, amenities, locations, and investment opportunities.</p>
           <div class="project-footer">
             <div class="project-links">
-              <span class="project-link">⚙</span>
-              <span class="project-link">↗</span>
-            </div>
-            <div class="project-arrow">View →</div>
+              <a href="https://clifftonvalley.com/" target="_blank" class="project-arrow">View Website →</a>
+              <a href="contact.html" class="project-arrow">Hire Me</a>
+          </div>
           </div>
         </div>
-      </a>
+      </div>
+
+      <div class="project-card" data-reveal data-reveal-delay="1">
+        <div class="project-img">
+          <img src="Project Images/NIIB.jpg" alt="">
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Wordpress</span>
+            <span class="project-tag">Elementor</span>
+            <span class="project-tag">Responsive Design</span>
+          </div>
+          <div class="project-title">NIIB Mohali — Beauty Institute</div>
+          <p class="project-desc">A professional institute website presenting beauty courses, placement support, counselling, and student enrolment information.</p>
+          <div class="project-footer">
+            <div class="project-links">
+              <a href="https://niibinstitutemohali.com/" target="_blank" class="project-arrow">View Website →</a>
+              <a href="contact.html" class="project-arrow">Hire Me</a>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      
     </div>
   </div>
 </section>
@@ -316,7 +310,7 @@
       <a href="projects.html">Projects</a>
       <a href="contact.html">Contact</a>
     </div>
-    <p class="footer-copy">© 2025 Manoj Dhiman. Made with <span>♥</span></p>
+    <p class="footer-copy">©2026 Manoj Dhiman. Made with <span>♥</span> in Haryana India.</p>
   </div>
 </footer>
 
