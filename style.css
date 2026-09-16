@@ -729,7 +729,7 @@ footer {
    ============================================ */
 
 /* ---- PAGE LOAD FADE ---- */
-body { opacity: 0; }
+body { opacity: 1; }
 body.page-loaded {
   opacity: 1;
   transition: opacity 0.5s ease;
