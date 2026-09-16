@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Graphics — Manoj Dhiman</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a class="nav-logo" href="index.html"><img src="White Logo.png" alt=""></a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="graphics.html">Graphics</a>
+    <a href="contact.html" class="nav-cta">Hire Me</a>
+  </div>
+  <div class="nav-hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="skills.html">Skills</a>
+  <a href="projects.html">Projects</a>
+  <a href="graphics.html">Graphics</a>
+  <a href="contact.html" class="nav-cta">Hire Me</a>
+</div>
+
+<!-- HERO -->
+<section style="padding-top: 9rem; padding-bottom: 2rem; position: relative; overflow: hidden;">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="container" style="text-align: center;">
+    <div class="section-eyebrow" style="margin: 0 auto 1rem;" data-reveal>My Creative Side</div>
+    <h1 class="section-title" style="font-size: clamp(2.5rem,5vw,4rem);" data-reveal data-reveal-delay="1">
+      Graphic <em>Design</em> Work
+    </h1>
+    <p class="section-sub" style="margin: 0 auto;" data-reveal data-reveal-delay="2">
+      A look at the visual side of my work — branding, social media creatives, and UI/UX mockups made alongside client projects.
+    </p>
+  </div>
+</section>
+
+<!-- GRAPHICS GRID -->
+<section style="padding-top: 1rem;">
+  <div class="container">
+
+    <div class="graphics-grid" id="graphicsGrid">
+
+      <!-- Replace each src below with your real file, e.g. "Graphic Images/branding-1.jpg" -->
+      <div class="graphic-card" data-reveal>
+        <img src="Graphic Images/Cliffton Valley Mockup.jfif" alt="Cliffton Valley Mockup">
+        <div class="graphic-overlay">
+          <div>
+            <div class="graphic-overlay-title">Cliffton Valley - Mockup</div>
+            <div class="graphic-overlay-cat">Mockup</div>
+          </div>
+          <div class="graphic-zoom-icon">⤢</div>
+        </div>
+      </div>
+
+      <div class="graphic-card" data-reveal>
+        <img src="Graphic Images/Product Creative.jfif">
+        <div class="graphic-overlay">
+          <div>
+            <div class="graphic-overlay-title">Instagram Product Creative</div>
+            <div class="graphic-overlay-cat">Creative</div>
+          </div>
+          <div class="graphic-zoom-icon">⤢</div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="padding: 5rem 0; border-top: 1px solid var(--border);">
+  <div class="container" style="text-align: center;" data-reveal>
+    <div class="section-eyebrow" style="margin: 0 auto 1rem;">Like what you see?</div>
+    <h2 class="section-title">Let's design something <em>great</em></h2>
+    <p class="section-sub" style="margin: 0 auto 2.5rem;">Need branding, social creatives, or UI mockups for your next project? I'd love to help.</p>
+    <a href="contact.html" class="btn-primary" style="font-size: 1rem; padding: 1rem 2.5rem;">Get in Touch →</a>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">←</button>
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">→</button>
+  <div class="lightbox-inner">
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+    <div class="lightbox-caption">
+      <div class="lightbox-title" id="lightboxTitle"></div>
+      <div class="lightbox-meta">
+        <span class="lightbox-cat" id="lightboxCat"></span>
+        <span class="lightbox-counter" id="lightboxCounter"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-logo">MD<span>.</span></div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="graphics.html">Graphics</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p class="footer-copy">©2026 Manoj Dhiman. Made with <span>♥</span> in Haryana India.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
