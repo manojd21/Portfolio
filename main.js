@@ -207,7 +207,7 @@ if (!isTouch && !prefersReducedMotion) {
    TILT EFFECT ON CARDS (desktop only, subtle)
 --------------------------------------------- */
 if (!isTouch && !prefersReducedMotion) {
-  document.querySelectorAll('.hero-card, .skill-card, .project-card, .highlight-card').forEach(card => {
+  document.querySelectorAll('.hero-card, .skill-card, .project-card, .highlight-card, .graphic-card').forEach(card => {
     card.addEventListener('mousemove', (e) => {
       const r = card.getBoundingClientRect();
       const x = (e.clientX - r.left) / r.width - 0.5;
@@ -263,7 +263,7 @@ if (!isTouch) {
    don't already have explicit data-reveal-delay
 --------------------------------------------- */
 (function autoStagger() {
-  document.querySelectorAll('.skills-grid, .projects-grid, .tech-pills-row, .about-highlights').forEach(group => {
+  document.querySelectorAll('.skills-grid, .projects-grid, .tech-pills-row, .about-highlights, .graphics-grid').forEach(group => {
     const children = Array.from(group.children).filter(c => c.hasAttribute('data-reveal'));
     children.forEach((child, i) => {
       if (!child.hasAttribute('data-reveal-delay')) {
@@ -279,3 +279,71 @@ if (!isTouch) {
 window.addEventListener('DOMContentLoaded', () => {
   document.body.classList.add('page-loaded');
 });
+
+/* ---------------------------------------------
+   GRAPHICS PAGE — LIGHTBOX
+--------------------------------------------- */
+const graphicCards = document.querySelectorAll('.graphic-card');
+if (graphicCards.length) {
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxTitle = document.getElementById('lightboxTitle');
+  const lightboxCat = document.getElementById('lightboxCat');
+  const lightboxCounter = document.getElementById('lightboxCounter');
+  const lightboxClose = document.getElementById('lightboxClose');
+  const lightboxPrev = document.getElementById('lightboxPrev');
+  const lightboxNext = document.getElementById('lightboxNext');
+
+  const galleryItems = Array.from(graphicCards);
+  let currentIndex = 0;
+
+  function updateLightbox() {
+    const img = galleryItems[currentIndex].querySelector('img');
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt || '';
+    lightboxTitle.textContent = img.dataset.title || '';
+    lightboxCat.textContent = img.dataset.category || '';
+    lightboxCounter.textContent = `${currentIndex + 1} / ${galleryItems.length}`;
+  }
+
+  function openLightbox(index) {
+    currentIndex = index;
+    updateLightbox();
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function showPrev() {
+    currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+    updateLightbox();
+  }
+
+  function showNext() {
+    currentIndex = (currentIndex + 1) % galleryItems.length;
+    updateLightbox();
+  }
+
+  galleryItems.forEach((card, i) => {
+    card.addEventListener('click', () => openLightbox(i));
+  });
+
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightboxPrev.addEventListener('click', showPrev);
+  lightboxNext.addEventListener('click', showNext);
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') showPrev();
+    if (e.key === 'ArrowRight') showNext();
+  });
+}
