@@ -65,6 +65,12 @@ a.nav-logo img {
   a.nav-logo img {
     width: 20%;
 }
+
+a.btn-primary, .btn-secondary {
+    font-size: 14px !important;
+    padding: 12px 25px !important;
+}
+
 }
 
 .navbar {
